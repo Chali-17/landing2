@@ -1,0 +1,50 @@
+# Nombre del flujo de trabajo que verás en la pestaña "Actions" de GitHub
+name: CI/CD - Construir y Desplegar Landing 2
+
+# Activador: se ejecuta cada vez que subes código a la rama "main"
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  # Nombre del trabajo
+  build-and-deploy:
+    # El robot usará una máquina virtual con Ubuntu para trabajar
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Descarga el código de tu repositorio a la máquina virtual
+      - name: Checkout del código
+        uses: actions/checkout@v3
+
+      # 2. Inicia sesión en Docker Hub usando los secretos que configuraste
+      - name: Login a Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      # 3. Construye la imagen de Docker y la sube a Docker Hub
+      - name: Construir y subir la imagen
+        uses: docker/build-push-action@v4
+        with:
+          context: .  # Usa el Dockerfile de la raíz de este repositorio
+          push: true
+          # ¡CAMBIO IMPORTANTE! Este es el nombre de la imagen para la landing 2
+          tags: angelchali/landing2-equipo01:latest
+
+      # 4. Se conecta a tu servidor por SSH y ejecuta los comandos de despliegue
+      - name: Desplegar en el servidor
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          script: |
+            # Estos comandos se ejecutan en tu servidor DigitalOcean
+            # 1. Navega a la carpeta donde está tu docker-compose.yml
+            cd ~/proyecto-docker
+            # 2. Descarga la nueva versión de la imagen de landing2
+            sudo docker-compose pull landing2
+            # 3. Recrea el contenedor de landing2 con la nueva imagen
+            sudo docker-compose up -d --force-recreate landing2
+            echo "¡Despliegue de Landing 2 completado!"
