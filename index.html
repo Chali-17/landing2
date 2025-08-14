@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equinos Elite - Caballos de Raza y Entrenamiento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-horse-head me-2"></i>Equinos Elite
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#caballos">Nuestros Caballos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#entrenamiento">Entrenamiento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-white mb-4">
+                        Caballos de <span class="text-warning">Élite</span>
+                    </h1>
+                    <p class="lead text-white mb-4">
+                        Crianza, entrenamiento y venta de caballos de raza en Guatemala. 
+                        Más de 25 años dedicados a la excelencia equina en tierras chapinas.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#contacto" class="btn btn-warning btn-lg px-4">
+                            <i class="fas fa-phone me-2"></i>Cotizar Precio
+                        </a>
+                        <a href="#caballos" class="btn btn-outline-light btn-lg px-4">
+                            <i class="fas fa-eye me-2"></i>Ver Catálogo
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <i class="fas fa-horse display-1 text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold">¿Por qué elegir Equinos Elite Guatemala?</h2>
+                    <p class="lead text-muted">Tradición chapin, calidad y excelencia en el mundo equino</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-trophy text-primary"></i>
+                            </div>
+                            <h4>Caballos Campeones</h4>
+                            <p class="text-muted">Líneas de sangre ganadoras con pedigrí internacional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-graduation-cap text-primary"></i>
+                            </div>
+                            <h4>Entrenamiento Profesional</h4>
+                            <p class="text-muted">Programas de entrenamiento especializados por expertos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-heart text-primary"></i>
+                            </div>
+                            <h4>Cuidado Excepcional</h4>
+                            <p class="text-muted">Atención veterinaria premium y cuidado personalizado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold">Nuestros Servicios</h2>
+                    <p class="lead text-muted">Servicios completos para el mundo equino</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item p-4 h-100">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-horse-head"></i>
+                        </div>
+                        <h4>Venta de Caballos</h4>
+                        <p>Caballos de raza para deportes, recreación y fincas guatemaltecas</p>
+                        <div class="price-badge">
+                            <span class="fw-bold">Desde Q18,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item p-4 h-100">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h4>Entrenamiento Deportivo</h4>
+                        <p>Preparación para competencias de salto, doma y carreras en Guatemala</p>
+                        <div class="price-badge">
+                            <span class="fw-bold">Q1,200/mes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item p-4 h-100">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h4>Pensión y Cuidado</h4>
+                        <p>Instalaciones de primera en fincas guatemaltecas para el cuidado de tu caballo</p>
+                        <div class="price-badge">
+                            <span class="fw-bold">Q800/mes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item p-4 h-100">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h4>Servicios Veterinarios</h4>
+                        <p>Atención médica especializada por veterinarios guatemaltecos certificados</p>
+                        <div class="price-badge">
+                            <span class="fw-bold">Q350/consulta</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item p-4 h-100">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h4>Clases de Equitación</h4>
+                        <p>Lecciones para jinetes chapianes de todos los niveles</p>
+                        <div class="price-badge">
+                            <span class="fw-bold">Q150/clase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item p-4 h-100">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h4>Programa de Cría</h4>
+                        <p>Mejoramiento genético y crianza selectiva en tierras guatemaltecas</p>
+                        <div class="price-badge">
+                            <span class="fw-bold">Q5,000/servicio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horses Section -->
+    <section id="caballos" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold">Nuestros Caballos</h2>
+                    <p class="lead text-muted">Razas selectas y ejemplares excepcionales</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/caballo1.jpg" class="card-img-top" alt="Pura Sangre Inglés">
+                        <div class="card-body">
+                            <h5 class="card-title">Pura Sangre Inglés</h5>
+                            <p class="card-text">Velocidad y elegancia para competencias de alto nivel</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-star text-warning me-2"></i>Velocidad excepcional</li>
+                                <li><i class="fas fa-star text-warning me-2"></i>Temperamento noble</li>
+                                <li><i class="fas fa-star text-warning me-2"></i>Líneas campeones</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-primary">Disponible</span>
+                                <small class="text-muted"><strong>Desde Q120,000</strong></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/caballo2.jpg" class="card-img-top" alt="Cuarto de Milla">
+                        <div class="card-body">
+                            <h5 class="card-title">Cuarto de Milla</h5>
+                            <p class="card-text">Versatilidad y fuerza para trabajo y competencia</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-star text-warning me-2"></i>Gran versatilidad</li>
+                                <li><i class="fas fa-star text-warning me-2"></i>Fácil manejo</li>
+                                <li><i class="fas fa-star text-warning me-2"></i>Resistencia superior</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">Disponible</span>
+                                <small class="text-muted"><strong>Desde Q65,000</strong></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/caballo3.jpg" class="card-img-top" alt="Hanoveriano">
+                        <div class="card-body">
+                            <h5 class="card-title">Hanoveriano</h5>
+                            <p class="card-text">Elegancia y técnica para doma clásica y salto</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-star text-warning me-2"></i>Movimientos elegantes</li>
+                                <li><i class="fas fa-star text-warning me-2"></i>Aptitud para doma</li>
+                                <li><i class="fas fa-star text-warning me-2"></i>Conformación atlética</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-warning">Reservado</span>
+                                <small class="text-muted"><strong>Desde Q160,000</strong></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section id="entrenamiento" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">Programas de Entrenamiento</h2>
+                    <p class="lead mb-4">
+                        Nuestros programas están diseñados para desarrollar el máximo potencial 
+                        de cada caballo, adaptándose a sus características únicas.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="training-item">
+                                <h5><i class="fas fa-medal text-primary me-2"></i>Doma Clásica</h5>
+                                <p class="small text-muted">Desarrollo de movimientos precisos y elegantes</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="training-item">
+                                <h5><i class="fas fa-running text-primary me-2"></i>Salto</h5>
+                                <p class="small text-muted">Técnica y potencia para competencias de salto</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="training-item">
+                                <h5><i class="fas fa-clock text-primary me-2"></i>Carreras</h5>
+                                <p class="small text-muted">Velocidad y resistencia para pista</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="training-item">
+                                <h5><i class="fas fa-users text-primary me-2"></i>Recreativo</h5>
+                                <p class="small text-muted">Preparación para jinetes aficionados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="training-visual">
+                        <div class="training-circle">
+                            <i class="fas fa-horse-head display-1 text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <h2 class="display-4 fw-bold">25+</h2>
+                        <p class="lead">Años de Experiencia</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <h2 class="display-4 fw-bold">150+</h2>
+                        <p class="lead">Caballos Entrenados</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <h2 class="display-4 fw-bold">80+</h2>
+                        <p class="lead">Trofeos Ganados</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <h2 class="display-4 fw-bold">100%</h2>
+                        <p class="lead">Satisfacción</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold">Lo que dicen nuestros clientes</h2>
+                    <p class="lead text-muted">Testimonios de jinetes satisfechos</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center p-4">
+                        <div class="testimonial-avatar mb-3">
+                            <i class="fas fa-user-circle display-4 text-primary"></i>
+                        </div>
+                        <blockquote class="blockquote">
+                            <p>"Excelente calidad de caballos y entrenamiento profesional. Mi caballo ha mejorado increíblemente desde que llegué a esta finca chapin."</p>
+                        </blockquote>
+                        <footer class="blockquote-footer">
+                            <cite title="Source Title">María González - Ciudad de Guatemala</cite>
+                        </footer>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center p-4">
+                        <div class="testimonial-avatar mb-3">
+                            <i class="fas fa-user-circle display-4 text-success"></i>
+                        </div>
+                        <blockquote class="blockquote">
+                            <p>"El mejor lugar en Guatemala para comprar caballos de raza. Atención personalizada y resultados garantizados. ¡Muy recomendados, hermano!"</p>
+                        </blockquote>
+                        <footer class="blockquote-footer">
+                            <cite title="Source Title">Carlos Mendoza - Antigua Guatemala</cite>
+                        </footer>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center p-4">
+                        <div class="testimonial-avatar mb-3">
+                            <i class="fas fa-user-circle display-4 text-warning"></i>
+                        </div>
+                        <blockquote class="blockquote">
+                            <p>"Instalaciones de primer nivel y personal altamente capacitado. Los mejores entrenadores chapines. Totalmente recomendado."</p>
+                        </blockquote>
+                        <footer class="blockquote-footer">
+                            <cite title="Source Title">Ana Rodríguez - Quetzaltenango</cite>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+     <section id="contacto" class="py-5 bg-light">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="display-5 fw-bold">Ponte en Contacto</h2>
+                <p class="lead text-muted">Estamos aquí para ayudarte con tus necesidades ganaderas. Llena el formulario o usa nuestros canales directos.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+                <div class="contact-item d-flex mb-3">
+                    <div class="contact-icon me-3 fs-4 text-success">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h5>Teléfono</h5>
+                        <p class="text-muted mb-0">+502 7832-1456</p>
+                    </div>
+                </div>
+                <div class="contact-item d-flex mb-3">
+                    <div class="contact-icon me-3 fs-4 text-success">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h5>Email</h5>
+                        <p class="text-muted mb-0">info@ganaderiapremium.com.gt</p>
+                    </div>
+                </div>
+                <div class="contact-item d-flex">
+                    <div class="contact-icon me-3 fs-4 text-success">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h5>Ubicación</h5>
+                        <p class="text-muted mb-0">Finca Los Robles, Km 45 Carretera a Quetzaltenango, Guatemala</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="card border-0 shadow-sm p-4">
+                    <form action="https://formspree.io/f/xqaljdaz"  method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Tu Nombre:</label>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Escribe tu nombre completo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Tu Correo Electrónico:</label>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Tu Mensaje o Consulta:</label>
+                            <textarea name="message" class="form-control" id="message" rows="4" placeholder="Escribe tu consulta aquí..." required></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success btn-lg">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Equinos Elite. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--<script src="script.js"></script> -->
+</body>
+</html>
